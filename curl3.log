@@ -1,0 +1,1 @@
+{"success":false,"message":"Failed to fetch events.","error":"Firebase Admin SDK not initialized: Missing required environment variables (FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY)."}

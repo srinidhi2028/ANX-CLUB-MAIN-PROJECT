@@ -1,0 +1,42 @@
+
+> v1-platform-tmp@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3001
+
+ ✓ Starting...
+ ✓ Ready in 1322ms
+ ✓ Compiled /src/middleware in 142ms (115 modules)
+ ✓ Compiled /api/v1/events in 122ms (102 modules)
+⚠️ Firebase Admin SDK environment variables are missing. Firebase operations on the server side will fail at runtime if invoked.
+[GET /api/v1/events] Error: Firebase Admin SDK not initialized: Missing required environment variables (FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY).
+    at Object.get (webpack-internal:///(rsc)/./src/lib/firebase/admin.ts:35:19)
+    at GET (webpack-internal:///(rsc)/./src/app/api/v1/events/route.ts:20:81)
+    at /Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57234
+    at /Users/satwikn/ANXversion1/node_modules/next/dist/server/lib/trace/tracer.js:140:36
+    at NoopContextManager.with (/Users/satwikn/ANXversion1/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:14:19)
+    at ContextAPI.with (/Users/satwikn/ANXversion1/node_modules/@opentelemetry/api/build/src/api/context.js:51:46)
+    at NoopTracer.startActiveSpan (/Users/satwikn/ANXversion1/node_modules/@opentelemetry/api/build/src/trace/NoopTracer.js:54:31)
+    at ProxyTracer.startActiveSpan (/Users/satwikn/ANXversion1/node_modules/@opentelemetry/api/build/src/trace/ProxyTracer.js:27:24)
+    at /Users/satwikn/ANXversion1/node_modules/next/dist/server/lib/trace/tracer.js:122:103
+    at NoopContextManager.with (/Users/satwikn/ANXversion1/node_modules/@opentelemetry/api/build/src/context/NoopContextManager.js:14:19)
+    at ContextAPI.with (/Users/satwikn/ANXversion1/node_modules/@opentelemetry/api/build/src/api/context.js:51:46)
+    at NextTracerImpl.trace (/Users/satwikn/ANXversion1/node_modules/next/dist/server/lib/trace/tracer.js:122:28)
+    at /Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:48896
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at Object.wrap (/Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:40958)
+    at /Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:47472
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at Object.wrap (/Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:38293)
+    at /Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:47434
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at eT.execute (/Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46881)
+    at eT.handle (/Users/satwikn/ANXversion1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58771)
+    at doRender (/Users/satwikn/ANXversion1/node_modules/next/dist/server/base-server.js:1366:60)
+    at cacheEntry.responseCache.get.routeKind (/Users/satwikn/ANXversion1/node_modules/next/dist/server/base-server.js:1588:34)
+    at ResponseCache.get (/Users/satwikn/ANXversion1/node_modules/next/dist/server/response-cache/index.js:49:26)
+    at DevServer.renderToResponseWithComponentsImpl (/Users/satwikn/ANXversion1/node_modules/next/dist/server/base-server.js:1496:53)
+ GET /api/v1/events 500 in 198ms
+[?25h
